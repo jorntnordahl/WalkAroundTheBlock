@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="StopCell" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StopCell" textLabel="JQb-dS-oSD" detailTextLabel="4Ru-tl-dFA" style="IBUITableViewCellStyleSubtitle" id="qy5-UB-C82">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="StopCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StopCell" textLabel="JQb-dS-oSD" detailTextLabel="4Ru-tl-dFA" style="IBUITableViewCellStyleSubtitle" id="qy5-UB-C82">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-dS-oSD">
@@ -49,7 +49,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twA-J7-N5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="251"/>
+            <point key="canvasLocation" x="1533" y="251"/>
         </scene>
         <!--MapVC - Stop 1: -->
         <scene sceneID="Bcn-E4-tEH">
@@ -62,9 +62,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pDq-hM-jrg"/>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WyQ-iO-T0A">
                                 <items>
-                                    <barButtonItem title="Prev Stop" id="6D1-5g-iKB"/>
+                                    <barButtonItem title="Prev" id="6D1-5g-iKB"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="C6T-B8-bqm"/>
-                                    <barButtonItem title="Next Stop" id="pLw-rP-elu"/>
+                                    <barButtonItem title="Next" id="pLw-rP-elu"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yeS-fW-4iZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="251"/>
+            <point key="canvasLocation" x="1948" y="251"/>
         </scene>
         <!--WalksTVC - Walks-->
         <scene sceneID="OCd-qT-G8x">
@@ -96,17 +96,12 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="7WO-Ko-ZWe">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="WalkCell" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WalkCell" textLabel="gsg-AC-RAO" detailTextLabel="eAM-at-GAG" style="IBUITableViewCellStyleSubtitle" id="GEg-RH-m85">
-                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="WalkCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WalkCell" textLabel="gsg-AC-RAO" detailTextLabel="eAM-at-GAG" style="IBUITableViewCellStyleSubtitle" id="GEg-RH-m85">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gsg-AC-RAO">
@@ -125,7 +120,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="617-xu-gcU" kind="push" trigger="accessoryAction" id="ETA-pe-XbX"/>
+                                    <segue destination="617-xu-gcU" kind="push" identifier="ShowStops" trigger="accessoryAction" id="ETA-pe-XbX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -135,19 +130,23 @@
                             <outlet property="delegate" destination="DFX-NM-YbE" id="fkq-ZR-ki9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Walks" id="pbi-ad-4UU"/>
-                    <connections>
-                        <outlet property="searchBar" destination="7WO-Ko-ZWe" id="AF3-kZ-NJh"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Walks" id="pbi-ad-4UU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="o1t-ZH-NDH">
+                            <connections>
+                                <segue destination="9J2-9z-yKa" kind="push" identifier="NewWalk" id="KrB-zr-Ioq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdt-Ei-di4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="251"/>
+            <point key="canvasLocation" x="1093" y="251"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Walks-->
         <scene sceneID="Fb7-Xp-bza">
             <objects>
                 <navigationController id="cpJ-6H-rzJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Walks" id="AHW-6z-wS5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HNv-rA-8ha">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -160,7 +159,29 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bia-vU-o3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="251"/>
+            <point key="canvasLocation" x="674" y="251"/>
+        </scene>
+        <!--New WalkVC - New Walk-->
+        <scene sceneID="a11-lI-8YU">
+            <objects>
+                <viewController id="9J2-9z-yKa" customClass="NewWalkVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="feC-E7-BIA">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="kSB-Fr-umm"/>
+                    <navigationItem key="navigationItem" title="New Walk" id="7ps-sf-Dzt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="pWZ-tB-yj3">
+                            <connections>
+                                <action selector="saveWalkClicked:" destination="9J2-9z-yKa" id="NoJ-iK-pzl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAS-T1-rQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1533" y="922"/>
         </scene>
     </scenes>
     <classes>
@@ -174,6 +195,12 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="NewWalkVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewWalkVC.h"/>
+            <relationships>
+                <relationship kind="action" name="saveWalkClicked:" candidateClass="UIBarButtonItem"/>
+            </relationships>
         </class>
         <class className="StopsTVC" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/StopsTVC.h"/>

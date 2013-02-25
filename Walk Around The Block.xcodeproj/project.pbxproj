@@ -25,6 +25,7 @@
 		0AD926D816DB0E6B00FA192E /* StartLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD926D716DB0E6B00FA192E /* StartLocation.m */; };
 		0AD926DB16DB115E00FA192E /* WalksTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD926DA16DB115E00FA192E /* WalksTVC.m */; };
 		0AD926DD16DB189A00FA192E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD926DC16DB189A00FA192E /* MapKit.framework */; };
+		0AE7802A16DBBD6F003785E9 /* NewWalkVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7802916DBBD6F003785E9 /* NewWalkVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		0AD926D916DB115E00FA192E /* WalksTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalksTVC.h; sourceTree = "<group>"; };
 		0AD926DA16DB115E00FA192E /* WalksTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalksTVC.m; sourceTree = "<group>"; };
 		0AD926DC16DB189A00FA192E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0AE7802816DBBD6F003785E9 /* NewWalkVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWalkVC.h; sourceTree = "<group>"; };
+		0AE7802916DBBD6F003785E9 /* NewWalkVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWalkVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 		0AD926C516DB0A0B00FA192E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0AE7802816DBBD6F003785E9 /* NewWalkVC.h */,
+				0AE7802916DBBD6F003785E9 /* NewWalkVC.m */,
 				0AD926D916DB115E00FA192E /* WalksTVC.h */,
 				0AD926DA16DB115E00FA192E /* WalksTVC.m */,
 				0AD926C216DB099000FA192E /* StopsTVC.h */,
@@ -230,6 +235,7 @@
 				0AD926D516DB0E4F00FA192E /* Stop.m in Sources */,
 				0AD926D816DB0E6B00FA192E /* StartLocation.m in Sources */,
 				0AD926DB16DB115E00FA192E /* WalksTVC.m in Sources */,
+				0AE7802A16DBBD6F003785E9 /* NewWalkVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +368,7 @@
 				0AD926C116DB07CE00FA192E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

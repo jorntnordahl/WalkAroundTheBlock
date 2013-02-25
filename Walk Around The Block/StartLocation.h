@@ -1,13 +1,13 @@
 //
-//  ViewController.h
+//  StartLocation.h
 //  Walk Around The Block
 //
 //  Created by Jorn Nordahl on 2/24/13.
 //  Copyright (c) 2013 Jorn Nordahl. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
+@interface StartLocation : NSObject
 
 @end

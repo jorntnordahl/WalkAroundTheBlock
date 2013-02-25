@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9B9EB216DBCB0F005C7FCD /* NewStopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B9EB116DBCB0F005C7FCD /* NewStopVC.m */; };
 		0AD9269D16DB07CE00FA192E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD9269C16DB07CE00FA192E /* UIKit.framework */; };
 		0AD9269F16DB07CE00FA192E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD9269E16DB07CE00FA192E /* Foundation.framework */; };
 		0AD926A116DB07CE00FA192E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD926A016DB07CE00FA192E /* CoreGraphics.framework */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9B9EB016DBCB0F005C7FCD /* NewStopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewStopVC.h; sourceTree = "<group>"; };
+		0A9B9EB116DBCB0F005C7FCD /* NewStopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewStopVC.m; sourceTree = "<group>"; };
 		0AD9269916DB07CE00FA192E /* Walk Around The Block.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walk Around The Block.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD9269C16DB07CE00FA192E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0AD9269E16DB07CE00FA192E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 		0AD926C516DB0A0B00FA192E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0A9B9EB016DBCB0F005C7FCD /* NewStopVC.h */,
+				0A9B9EB116DBCB0F005C7FCD /* NewStopVC.m */,
 				0AE7802816DBBD6F003785E9 /* NewWalkVC.h */,
 				0AE7802916DBBD6F003785E9 /* NewWalkVC.m */,
 				0AD926D916DB115E00FA192E /* WalksTVC.h */,
@@ -236,6 +241,7 @@
 				0AD926D816DB0E6B00FA192E /* StartLocation.m in Sources */,
 				0AD926DB16DB115E00FA192E /* WalksTVC.m in Sources */,
 				0AE7802A16DBBD6F003785E9 /* NewWalkVC.m in Sources */,
+				0A9B9EB216DBCB0F005C7FCD /* NewStopVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

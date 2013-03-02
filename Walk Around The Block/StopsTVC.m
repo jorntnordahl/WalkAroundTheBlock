@@ -43,19 +43,57 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"StopCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    //cell.textLabel.text = [self titleForRow:indexPath.row];
-    //cell.detailTextLabel.text = [self subtitleForRow:indexPath.row];
-
-    return cell;
+    int stop = indexPath.row + 1;
+    if (stop == 1)
+    {
+        static NSString *CellIdentifier = @"StartStopCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        
+        // Configure the cell...
+        //cell.textLabel.text = [self titleForRow:indexPath.row];
+        //cell.detailTextLabel.text = [self subtitleForRow:indexPath.row];
+        
+        return cell;
+    }
+    else if (stop == 5)
+    {
+        static NSString *CellIdentifier = @"FinishStopCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        
+        // Configure the cell...
+        //cell.textLabel.text = [self titleForRow:indexPath.row];
+        //cell.detailTextLabel.text = [self subtitleForRow:indexPath.row];
+        
+        return cell;
+    }
+    else
+    {
+        static NSString *CellIdentifier = @"StopCell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        
+        if (stop == 2)
+        {
+            cell.textLabel.text = @"Stop 1: Giant Homes";
+            cell.detailTextLabel.text = @"4 Pictures";
+        }
+        else if (stop == 3)
+        {
+            cell.textLabel.text = @"Stop 2: Folsom Lake View";
+            cell.detailTextLabel.text = @"1 Picture";
+        }
+        else if (stop == 4)
+        {
+            cell.textLabel.text = @"Stop 3: Golf Course";
+            cell.detailTextLabel.text = @"1 Picture";
+        }
+        
+        return cell;
+    }
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

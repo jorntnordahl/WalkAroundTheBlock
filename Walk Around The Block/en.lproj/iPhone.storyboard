@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cpJ-6H-rzJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C2037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cpJ-6H-rzJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -13,19 +13,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="StopCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StopCell" textLabel="JQb-dS-oSD" detailTextLabel="4Ru-tl-dFA" style="IBUITableViewCellStyleSubtitle" id="qy5-UB-C82">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="StartStopCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StartStopCell" textLabel="JQb-dS-oSD" detailTextLabel="4Ru-tl-dFA" style="IBUITableViewCellStyleSubtitle" id="qy5-UB-C82">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-dS-oSD">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQb-dS-oSD">
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ru-tl-dFA">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Where do you start this walk?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ru-tl-dFA">
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -34,7 +34,59 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="DrJ-sh-bWs" kind="push" identifier="ShowLocation" trigger="accessoryAction" id="KKb-sc-fbA"/>
+                                    <segue destination="DrJ-sh-bWs" kind="push" id="TCa-cq-jBc"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="StopCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StopCell" textLabel="VuE-2g-7Xp" detailTextLabel="l6z-kO-7nf" style="IBUITableViewCellStyleSubtitle" id="qBa-hG-Iki">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Stop 1: Giant Homes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VuE-2g-7Xp">
+                                            <rect key="frame" x="10" y="2" width="178" height="22"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l6z-kO-7nf">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="DrJ-sh-bWs" kind="push" id="D6R-Nx-9yR"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="FinishStopCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FinishStopCell" textLabel="t5M-Cq-b9j" detailTextLabel="LQu-FD-f0G" style="IBUITableViewCellStyleSubtitle" id="k4C-lC-Avg">
+                                <rect key="frame" x="0.0" y="110" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Finish: Loop complete..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t5M-Cq-b9j">
+                                            <rect key="frame" x="10" y="2" width="207" height="22"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Your walk is complete." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LQu-FD-f0G">
+                                            <rect key="frame" x="10" y="24" width="141" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="DrJ-sh-bWs" kind="push" id="CjA-Mc-ixs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -44,7 +96,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Stops" id="Lmt-90-3Be">
-                        <barButtonItem key="rightBarButtonItem" title="Start" id="I97-mh-LvO"/>
+                        <barButtonItem key="rightBarButtonItem" title="Start" id="I97-mh-LvO">
+                            <connections>
+                                <segue destination="DrJ-sh-bWs" kind="push" id="hov-49-LF4"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twA-J7-N5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -64,6 +120,18 @@
                                 <items>
                                     <barButtonItem title="Prev" id="6D1-5g-iKB"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="C6T-B8-bqm"/>
+                                    <barButtonItem systemItem="bookmarks" id="jk7-Fc-c5Y">
+                                        <connections>
+                                            <segue destination="aOS-an-oS3" kind="push" identifier="ShowDescription" id="BZq-ao-5JV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7wo-8j-eKZ"/>
+                                    <barButtonItem systemItem="camera" id="jHu-az-aLd">
+                                        <connections>
+                                            <segue destination="KUR-UB-hIg" kind="push" id="BcO-oB-bGy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="22e-wE-9SU"/>
                                     <barButtonItem title="Next" id="pLw-rP-elu"/>
                                 </items>
                             </toolbar>
@@ -88,6 +156,43 @@
             </objects>
             <point key="canvasLocation" x="1948" y="251"/>
         </scene>
+        <!--View Controller - Stop 1: Details-->
+        <scene sceneID="Rlu-Oc-QFc">
+            <objects>
+                <viewController id="aOS-an-oS3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VIx-Aj-7aB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wv-g2-4JH">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bio-rG-2IF">
+                                <items>
+                                    <barButtonItem systemItem="action" id="Z18-Ca-iAh"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3wv-g2-4JH" firstAttribute="bottom" secondItem="bio-rG-2IF" secondAttribute="top" type="default" id="B3Y-PJ-8XX"/>
+                            <constraint firstItem="bio-rG-2IF" firstAttribute="bottom" secondItem="VIx-Aj-7aB" secondAttribute="bottom" type="default" id="OKL-EK-3cm"/>
+                            <constraint firstItem="bio-rG-2IF" firstAttribute="leading" secondItem="VIx-Aj-7aB" secondAttribute="leading" type="default" id="Qch-Xo-dvX"/>
+                            <constraint firstItem="3wv-g2-4JH" firstAttribute="leading" secondItem="VIx-Aj-7aB" secondAttribute="leading" type="default" id="Qdq-Iu-roI"/>
+                            <constraint firstItem="bio-rG-2IF" firstAttribute="trailing" secondItem="VIx-Aj-7aB" secondAttribute="trailing" type="default" id="ZB2-xD-VqN"/>
+                            <constraint firstItem="3wv-g2-4JH" firstAttribute="top" secondItem="VIx-Aj-7aB" secondAttribute="top" type="default" id="d94-Do-CLR"/>
+                            <constraint firstItem="3wv-g2-4JH" firstAttribute="trailing" secondItem="VIx-Aj-7aB" secondAttribute="trailing" type="default" id="ziZ-u2-Xa8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stop 1: Details" id="e4x-Da-wt9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srs-nT-NVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2551" y="-99"/>
+        </scene>
         <!--WalksTVC - Walks-->
         <scene sceneID="OCd-qT-G8x">
             <objects>
@@ -104,14 +209,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gsg-AC-RAO">
-                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Poppy Trail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gsg-AC-RAO">
+                                            <rect key="frame" x="10" y="2" width="99" height="22"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eAM-at-GAG">
-                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="4.5 Miles, 2 Stop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eAM-at-GAG">
+                                            <rect key="frame" x="10" y="24" width="105" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,7 +225,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="617-xu-gcU" kind="push" identifier="ShowStops" trigger="accessoryAction" id="ETA-pe-XbX"/>
+                                    <segue destination="617-xu-gcU" kind="push" identifier="ShowStops" id="dOO-0A-LAx"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -169,140 +274,158 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnl-fZ-R8f">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name the walk" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDt-Ow-0gV">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbe-sf-txn">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnl-fZ-R8f">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name the walk" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDt-Ow-0gV">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="sr9-Ub-6JM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnE-Fj-nLy">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the Walk." translatesAutoresizingMaskIntoConstraints="NO" id="1WS-Rt-R9e">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="kG7-pS-ky0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                    </textView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ITT-Pk-rXM">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="193" id="jka-g7-JiD"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="NewStartCell" selectionStyle="blue" accessoryType="checkmark" indentationWidth="10" editingAccessoryType="detailDisclosureButton" textLabel="brO-xv-hVq" detailTextLabel="Ppg-La-8uH" style="IBUITableViewCellStyleSubtitle" id="7pt-Wa-vHb">
+                                                <rect key="frame" x="0.0" y="22" width="280" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="260" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Set Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="brO-xv-hVq">
+                                                            <rect key="frame" x="10" y="2" width="75" height="22"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Cell describes the starting point" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ppg-La-8uH">
+                                                            <rect key="frame" x="10" y="24" width="196" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </tableViewCell>
+                                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="NewStopCell" selectionStyle="blue" showsReorderControl="YES" indentationWidth="10" textLabel="b0g-C0-iOl" detailTextLabel="mPL-da-ZpW" style="IBUITableViewCellStyleSubtitle" id="fdt-Gy-vWl">
+                                                <rect key="frame" x="0.0" y="66" width="280" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Stop Cell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b0g-C0-iOl">
+                                                            <rect key="frame" x="10" y="2" width="79" height="22"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Cell describes one of the stops on the walk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mPL-da-ZpW">
+                                                            <rect key="frame" x="10" y="24" width="260" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </tableViewCell>
+                                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="NewFinishCell" selectionStyle="blue" indentationWidth="10" textLabel="SOd-FC-fqX" detailTextLabel="fk7-6z-NZo" style="IBUITableViewCellStyleSubtitle" id="rxJ-SX-sxj">
+                                                <rect key="frame" x="0.0" y="110" width="280" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Set Finish" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SOd-FC-fqX">
+                                                            <rect key="frame" x="10" y="2" width="87" height="22"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Cell describes the walk finish." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fk7-6z-NZo">
+                                                            <rect key="frame" x="10" y="24" width="184" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Stops:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lU-ej-vYt">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag7-83-jdu">
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="czG-h6-uUZ" kind="push" identifier="NewStop" id="W2g-eX-nSW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="sr9-Ub-6JM"/>
+                                    <constraint firstAttribute="trailing" secondItem="ITT-Pk-rXM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0bO-U3-TUH"/>
+                                    <constraint firstItem="NnE-Fj-nLy" firstAttribute="top" secondItem="kDt-Ow-0gV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2Yk-T1-Xc8"/>
+                                    <constraint firstItem="1WS-Rt-R9e" firstAttribute="leading" secondItem="hbe-sf-txn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="51p-nb-91I"/>
+                                    <constraint firstItem="ITT-Pk-rXM" firstAttribute="leading" secondItem="hbe-sf-txn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BJL-pO-eSR"/>
+                                    <constraint firstAttribute="trailing" secondItem="kDt-Ow-0gV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="C1P-tH-OeT"/>
+                                    <constraint firstItem="ITT-Pk-rXM" firstAttribute="top" secondItem="Ag7-83-jdu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="FBK-Z0-gfD"/>
+                                    <constraint firstItem="ITT-Pk-rXM" firstAttribute="centerX" secondItem="hbe-sf-txn" secondAttribute="centerX" type="default" id="Hsg-eH-56t"/>
+                                    <constraint firstItem="NnE-Fj-nLy" firstAttribute="leading" secondItem="hbe-sf-txn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="V6H-t6-RT2"/>
+                                    <constraint firstItem="Jnl-fZ-R8f" firstAttribute="top" secondItem="hbe-sf-txn" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ZmZ-GD-3rg"/>
+                                    <constraint firstAttribute="bottom" secondItem="ITT-Pk-rXM" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="bft-fw-zE3"/>
+                                    <constraint firstItem="1WS-Rt-R9e" firstAttribute="top" secondItem="NnE-Fj-nLy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ewT-Fx-b89"/>
+                                    <constraint firstItem="kDt-Ow-0gV" firstAttribute="leading" secondItem="hbe-sf-txn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gSI-cR-St5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ag7-83-jdu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="iHk-zX-sUp"/>
+                                    <constraint firstItem="5lU-ej-vYt" firstAttribute="leading" secondItem="hbe-sf-txn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lRH-2W-CCl"/>
+                                    <constraint firstItem="Jnl-fZ-R8f" firstAttribute="leading" secondItem="hbe-sf-txn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nKt-gF-NWv"/>
+                                    <constraint firstItem="ITT-Pk-rXM" firstAttribute="top" secondItem="5lU-ej-vYt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qSL-oB-uH1"/>
+                                    <constraint firstAttribute="trailing" secondItem="1WS-Rt-R9e" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rmG-9M-HQG"/>
+                                    <constraint firstItem="Ag7-83-jdu" firstAttribute="top" secondItem="hbe-sf-txn" secondAttribute="top" constant="216" id="wxt-md-SoG"/>
+                                    <constraint firstItem="kDt-Ow-0gV" firstAttribute="top" secondItem="Jnl-fZ-R8f" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ytb-vv-sMj"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnE-Fj-nLy">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the Walk." translatesAutoresizingMaskIntoConstraints="NO" id="1WS-Rt-R9e">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="kG7-pS-ky0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
-                            </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelectionDuringEditing="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ITT-Pk-rXM">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="193" id="jka-g7-JiD"/>
-                                </constraints>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="NewStartCell" selectionStyle="blue" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="StartCell" editingAccessoryType="detailDisclosureButton" textLabel="brO-xv-hVq" detailTextLabel="Ppg-La-8uH" style="IBUITableViewCellStyleSubtitle" id="7pt-Wa-vHb">
-                                        <rect key="frame" x="0.0" y="22" width="280" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="260" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Set Start" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brO-xv-hVq">
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Cell describes the starting point" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppg-La-8uH">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="NewStopCell" selectionStyle="blue" showsReorderControl="YES" indentationWidth="10" textLabel="b0g-C0-iOl" detailTextLabel="mPL-da-ZpW" style="IBUITableViewCellStyleSubtitle" id="fdt-Gy-vWl">
-                                        <rect key="frame" x="0.0" y="66" width="280" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Stop Cell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0g-C0-iOl">
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Cell describes one of the stops on the walk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPL-da-ZpW">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="NewFinishCell" selectionStyle="blue" indentationWidth="10" textLabel="SOd-FC-fqX" detailTextLabel="fk7-6z-NZo" style="IBUITableViewCellStyleSubtitle" id="rxJ-SX-sxj">
-                                        <rect key="frame" x="0.0" y="110" width="280" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Set Finish" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOd-FC-fqX">
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Cell describes the walk finish." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk7-6z-NZo">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Stops:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lU-ej-vYt">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag7-83-jdu">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="czG-h6-uUZ" kind="push" identifier="NewStop" id="W2g-eX-nSW"/>
-                                </connections>
-                            </button>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jnl-fZ-R8f" firstAttribute="top" secondItem="feC-E7-BIA" secondAttribute="top" constant="20" symbolic="YES" type="default" id="28J-dq-qcb"/>
-                            <constraint firstAttribute="trailing" secondItem="Ag7-83-jdu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="AFN-ky-wvU"/>
-                            <constraint firstAttribute="trailing" secondItem="1WS-Rt-R9e" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="B3S-ho-fk6"/>
-                            <constraint firstItem="Jnl-fZ-R8f" firstAttribute="leading" secondItem="feC-E7-BIA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="CAc-ni-Mr3"/>
-                            <constraint firstItem="kDt-Ow-0gV" firstAttribute="top" secondItem="Jnl-fZ-R8f" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="E6N-XR-Yep"/>
-                            <constraint firstItem="kDt-Ow-0gV" firstAttribute="leading" secondItem="feC-E7-BIA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="FXc-dv-3tn"/>
-                            <constraint firstItem="5lU-ej-vYt" firstAttribute="leading" secondItem="feC-E7-BIA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Gu4-dH-m7U"/>
-                            <constraint firstItem="ITT-Pk-rXM" firstAttribute="leading" secondItem="feC-E7-BIA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="NHZ-DF-hLM"/>
-                            <constraint firstItem="NnE-Fj-nLy" firstAttribute="leading" secondItem="feC-E7-BIA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ost-Ev-g6Z"/>
-                            <constraint firstItem="ITT-Pk-rXM" firstAttribute="top" secondItem="Ag7-83-jdu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Q9A-tR-m2c"/>
-                            <constraint firstAttribute="trailing" secondItem="ITT-Pk-rXM" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Vq6-pD-2K6"/>
-                            <constraint firstItem="NnE-Fj-nLy" firstAttribute="top" secondItem="kDt-Ow-0gV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="h0L-xY-RRV"/>
-                            <constraint firstAttribute="bottom" secondItem="ITT-Pk-rXM" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="jK8-Ct-Ylh"/>
-                            <constraint firstItem="1WS-Rt-R9e" firstAttribute="top" secondItem="NnE-Fj-nLy" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kOO-f6-mS4"/>
-                            <constraint firstAttribute="trailing" secondItem="kDt-Ow-0gV" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="lxW-zu-DVT"/>
-                            <constraint firstItem="ITT-Pk-rXM" firstAttribute="top" secondItem="5lU-ej-vYt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qAz-ee-Tid"/>
-                            <constraint firstItem="1WS-Rt-R9e" firstAttribute="leading" secondItem="feC-E7-BIA" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="unp-kJ-qya"/>
+                            <constraint firstItem="hbe-sf-txn" firstAttribute="leading" secondItem="feC-E7-BIA" secondAttribute="leading" type="default" id="7v0-2S-MDw"/>
+                            <constraint firstItem="hbe-sf-txn" firstAttribute="top" secondItem="feC-E7-BIA" secondAttribute="top" type="default" id="PzT-V4-F1f"/>
+                            <constraint firstItem="hbe-sf-txn" firstAttribute="bottom" secondItem="feC-E7-BIA" secondAttribute="bottom" type="default" id="lWt-6w-uHg"/>
+                            <constraint firstItem="hbe-sf-txn" firstAttribute="trailing" secondItem="feC-E7-BIA" secondAttribute="trailing" type="default" id="qhQ-Pw-eId"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -434,7 +557,63 @@
             </objects>
             <point key="canvasLocation" x="1948" y="922"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uKI-u7-B6O">
+            <objects>
+                <viewController id="KUR-UB-hIg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sgc-Bk-t7J">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7E-g4-0Rp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nbu-ev-9iV"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="action" id="Z5K-Ab-aMW"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zhM-Ta-7ls"/>
+                                    <barButtonItem systemItem="play" id="d1P-2P-Vr4"/>
+                                </items>
+                            </toolbar>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="cali_poppies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HPB-mB-ds2">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HPB-mB-ds2" firstAttribute="trailing" secondItem="Sgc-Bk-t7J" secondAttribute="trailing" type="default" id="JBf-cd-3Cr"/>
+                            <constraint firstItem="c7E-g4-0Rp" firstAttribute="trailing" secondItem="Sgc-Bk-t7J" secondAttribute="trailing" type="default" id="OhV-4w-qnO"/>
+                            <constraint firstItem="HPB-mB-ds2" firstAttribute="leading" secondItem="Sgc-Bk-t7J" secondAttribute="leading" type="default" id="Wo8-Dn-hEA"/>
+                            <constraint firstItem="c7E-g4-0Rp" firstAttribute="bottom" secondItem="Sgc-Bk-t7J" secondAttribute="bottom" type="default" id="cjs-S5-Ngo"/>
+                            <constraint firstItem="HPB-mB-ds2" firstAttribute="top" secondItem="Sgc-Bk-t7J" secondAttribute="top" type="default" id="fNh-Gt-VUU"/>
+                            <constraint firstItem="HPB-mB-ds2" firstAttribute="bottom" secondItem="c7E-g4-0Rp" secondAttribute="top" type="default" id="kfM-0g-Mcz"/>
+                            <constraint firstItem="c7E-g4-0Rp" firstAttribute="leading" secondItem="Sgc-Bk-t7J" secondAttribute="leading" type="default" id="qsR-09-M4v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="98j-iH-QC4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAZ-Kd-HEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2551" y="555"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EtL-kC-cFA">
+            <objects>
+                <viewController id="ppV-Vh-oCc" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5y3-61-qmw">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifb-UJ-dQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
+    <resources>
+        <image name="cali_poppies.jpg" width="800" height="600"/>
+    </resources>
     <classes>
         <class className="MapVC" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapVC.h"/>
@@ -468,4 +647,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="hov-49-LF4"/>
+    </inferredMetricsTieBreakers>
 </document>

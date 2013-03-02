@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2D31B116E283D500B0EE64 /* cali_poppies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D31B016E283D500B0EE64 /* cali_poppies.jpg */; };
 		0A9B9EB216DBCB0F005C7FCD /* NewStopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9B9EB116DBCB0F005C7FCD /* NewStopVC.m */; };
 		0AD9269D16DB07CE00FA192E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD9269C16DB07CE00FA192E /* UIKit.framework */; };
 		0AD9269F16DB07CE00FA192E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD9269E16DB07CE00FA192E /* Foundation.framework */; };
@@ -30,9 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2D31B016E283D500B0EE64 /* cali_poppies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cali_poppies.jpg; sourceTree = "<group>"; };
 		0A9B9EB016DBCB0F005C7FCD /* NewStopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewStopVC.h; sourceTree = "<group>"; };
 		0A9B9EB116DBCB0F005C7FCD /* NewStopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewStopVC.m; sourceTree = "<group>"; };
-		0AD9269916DB07CE00FA192E /* Walk Around The Block.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walk Around The Block.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD9269916DB07CE00FA192E /* Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD9269C16DB07CE00FA192E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0AD9269E16DB07CE00FA192E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0AD926A016DB07CE00FA192E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2D31AE16E283AB00B0EE64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A2D31AF16E283B800B0EE64 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0A2D31AF16E283B800B0EE64 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0A2D31B016E283D500B0EE64 /* cali_poppies.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		0AD9269016DB07CE00FA192E = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +110,7 @@
 		0AD9269A16DB07CE00FA192E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AD9269916DB07CE00FA192E /* Walk Around The Block.app */,
+				0AD9269916DB07CE00FA192E /* Walk.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +128,7 @@
 		0AD926A216DB07CE00FA192E /* Walk Around The Block */ = {
 			isa = PBXGroup;
 			children = (
+				0A2D31AE16E283AB00B0EE64 /* Resources */,
 				0AD926AB16DB07CE00FA192E /* AppDelegate.h */,
 				0AD926AC16DB07CE00FA192E /* AppDelegate.m */,
 				0AD926B416DB07CE00FA192E /* iPhone.storyboard */,
@@ -182,7 +201,7 @@
 			);
 			name = "Walk Around The Block";
 			productName = "Walk Around The Block";
-			productReference = 0AD9269916DB07CE00FA192E /* Walk Around The Block.app */;
+			productReference = 0AD9269916DB07CE00FA192E /* Walk.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -222,6 +241,7 @@
 				0AD926B316DB07CE00FA192E /* Default-568h@2x.png in Resources */,
 				0AD926B616DB07CE00FA192E /* iPhone.storyboard in Resources */,
 				0AD926B916DB07CE00FA192E /* iPad.storyboard in Resources */,
+				0A2D31B116E283D500B0EE64 /* cali_poppies.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +359,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Walk Around The Block/Walk Around The Block-Prefix.pch";
 				INFOPLIST_FILE = "Walk Around The Block/Walk Around The Block-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Walk;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -350,7 +370,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Walk Around The Block/Walk Around The Block-Prefix.pch";
 				INFOPLIST_FILE = "Walk Around The Block/Walk Around The Block-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Walk;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

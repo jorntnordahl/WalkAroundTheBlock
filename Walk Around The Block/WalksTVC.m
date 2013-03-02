@@ -50,7 +50,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -59,7 +59,27 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    int stop = indexPath.row + 1;
+    if (stop == 1)
+    {
+        cell.textLabel.text = @"Poppy Trail";
+        cell.detailTextLabel.text = @"4.5 Miles, 8 Stops";
+    }
+    else if (stop == 2)
+    {
+        cell.textLabel.text = @"Cameron Park";
+        cell.detailTextLabel.text = @"3 Miles, 4 Stops";
+    }
+    else if (stop == 3)
+    {
+        cell.textLabel.text = @"Placerville, Mine Walk";
+        cell.detailTextLabel.text = @"2 Miles, 5 Stops";
+    }
+    else if (stop == 4)
+    {
+        cell.textLabel.text = @"El Dorado Hills, Latrobe";
+        cell.detailTextLabel.text = @"1 Mile, 4 Stops";
+    }
     return cell;
 }
 
